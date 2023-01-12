@@ -3,10 +3,12 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app! To jest test</Text>
-      <Text>ROBERT test</Text>
-      <StatusBar style="auto" />
+    <View style={{ flex: 1 }}>
+      <View label='TEST' style={{ flex: 1, backgroundColor: 'powderblue' }} >
+        <Text style={styles.fontcolor}>Tool Locator</Text>
+      </View>
+      <View style={{ flex: 2, backgroundColor: 'skyblue' }} />
+      <View style={{ flex: 3, backgroundColor: 'steelblue' }} />
     </View>
   );
 }
@@ -14,8 +16,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'blue',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  fontcolor: {
+    color: '#fff',
+    textAlign: 'center',
+    paddingTop: 70,
+    fontWeight: 'bold',
+    fontSize: 25,
   },
 });
